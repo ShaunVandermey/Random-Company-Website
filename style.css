@@ -6,6 +6,28 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width: 200px;
+    border-color: #3B82F6;
 }
 
 .header{
@@ -15,8 +37,6 @@ body{
     background-color: #1F2937;
     color: white;
 }
-
-
 
 .logo{
     justify-content: space-between;
@@ -34,12 +54,12 @@ body{
 }
 
 .leadSection{
-    padding: 80px 200px;
+    padding: 70px 230px;
     display: flex;
     flex-direction: row;
     background-color: #1F2937;
     color: white;
-    flex-wrap: wrap;
+    flex: 1;
 }
 
 button{
@@ -49,6 +69,12 @@ button{
     border-color: #3B82F6;
     font-weight: 700;
     padding: 4px 16px;
+    border-style: solid;
+}
+
+.imagesBold{
+    font-size: 1.25em;
+    padding: 30px 0;
 }
 
 .imagesSection{
@@ -58,12 +84,15 @@ button{
 .quoteSection{
     padding: 50px 250px;
     background-color: #E5E7EB;
-    font-style: italic;
+}
+
+.quote{
+    font-size: 1.5em;
 }
 
 .signUpSection{
-    margin: 50px 200px;
-    padding: 30px 80px;
+    margin: 50px 0;
+    padding: 30px 200px;
     background-color: #3B82F6;
     color: white;
     border-radius: 5px;
@@ -79,8 +108,30 @@ button{
     padding: 20px 200px;
     background-color: #1F2937;
     color: white;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .bold{
     font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.centerAlign{
+    text-align: center;
+}
+
+.rightAlign{
+    text-align: right;
+}
+
+.whiteOutline{
+    border-color: white;
+    margin: 0 40px;
 }
