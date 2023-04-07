@@ -2,12 +2,16 @@
     font-family: Roboto, Helvetica, sans-serif;
 }
 
+html, body{
+    overflow-y: scroll;
+}
+
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .content {
@@ -23,11 +27,25 @@ ul{
 
 li{
     list-style-type: none;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+figure{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
 }
 
 img{
     width: 200px;
     border-color: #3B82F6;
+    border-radius: 1px;
+}
+
+.imageText{
+    display: block;
 }
 
 .header{
@@ -109,7 +127,7 @@ button{
     background-color: #1F2937;
     color: white;
     flex-shrink: 0;
-    position: absolute;
+    /*position: absolute;*/
     right: 0;
     left: 0;
     bottom: 0;
@@ -134,4 +152,15 @@ button{
 .whiteOutline{
     border-color: white;
     margin: 0 40px;
+}
+
+.boldInfo{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.belowBoldInfo, .link{
+    font-size: 18px;
+    color: #E5E7EB;
 }
